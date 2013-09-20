@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="title_color">#EBCCAD</color>
+	<color name="sub_title_color">#F79C6E</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="red">#FF0000</color>
+</resources>

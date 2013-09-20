@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starrynight"
+    android:orientation="vertical"
+    tools:context=".RegisterPage" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:textColor="@color/title_color"
+            android:text="@string/register_title"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/username_register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/title_color"
+        android:text="@string/username_string" />
+
+    <EditText
+        android:id="@+id/username_register_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/username_register_tv"
+        android:background="@color/white"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/password_register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/username_register_et"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/title_color"
+        android:text="@string/password_string" />
+
+    <EditText
+        android:id="@+id/password_register_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/password_register_tv"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:background="@color/white"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/confirm_pw_register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/password_register_et"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/title_color"
+        android:text="@string/confirm_pw_string" />
+
+    <EditText
+        android:id="@+id/confirm_pw_register_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/confirm_pw_register_tv"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:background="@color/white"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/email_register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/confirm_pw_register_et"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/title_color"
+        android:text="@string/email_string" />
+
+    <EditText
+        android:id="@+id/email_register_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/email_register_tv"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:background="@color/white"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/email_register_et"
+        android:layout_marginTop="36dp"
+        android:onClick="submitRegister"
+        android:text="@string/submit_string" />
+
+ </RelativeLayout>

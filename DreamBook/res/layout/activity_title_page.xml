@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloudysky"
+    tools:context=".TitlePage" >
+
+    <TextView
+        android:id="@+id/password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/username_tv"
+        android:layout_below="@+id/username_tv"
+        android:layout_marginTop="36dp"
+        android:text="@string/password_string"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/title_color" />
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="164dp"
+        android:text="@string/main_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/title_color"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/password_et_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:layout_below="@+id/password_tv"
+        android:ems="10"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/username_et_title"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_tv"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/username_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_et"
+        android:layout_centerVertical="true"
+        android:text="@string/username_string"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/title_color" />
+
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_button"
+        android:textColor="@color/title_color"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/register_question" />
+
+    <TextView
+        android:id="@+id/forgot_pw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/register_tv"
+        android:textColor="@color/title_color"
+        android:layout_marginLeft="5dp"
+        android:text="@string/forgot_pw_string" />
+
+    <TextView
+        android:id="@+id/register_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/register_tv"
+        android:layout_toRightOf="@+id/register_tv"
+        android:textColor="@color/sub_title_color"
+        android:layout_marginLeft="2dp"
+        android:clickable="true"
+        android:onClick="goToRegister"
+        android:text="@string/register_link_string" />
+
+    <TextView
+        android:id="@+id/reset_pw_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_link"
+        android:textColor="@color/sub_title_color"
+        android:layout_toRightOf="@+id/forgot_pw_tv"
+        android:layout_marginLeft="2dp"
+        android:clickable="true"
+        android:onClick="buildResetPopup"
+        android:text="@string/reset_pw_link_string" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/password_et_title"
+        android:layout_marginTop="16dp"
+        android:onClick="loginButton"
+        android:text="@string/login_string" />
+
+</RelativeLayout>

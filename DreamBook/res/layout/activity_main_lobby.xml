@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dreamynight2"
+    tools:context=".MainLobby" >
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profile_pic"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/title_color"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/profile_pic"
+        android:layout_marginRight="43dp"
+        android:src="@drawable/stick" />
+
+    <TextView
+        android:id="@+id/main_lobby_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/main_lobby_string"
+        android:textColor="@color/title_color"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/logout_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="logoutUser"
+        android:text="@string/logout_string" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout_button"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/dream_submit"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/dream_input"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@+id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/dream_text_hint"
+        android:gravity="top|left"
+        android:imeOptions="actionDone"
+        android:lines="3" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/dream_subject_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dream_input"
+        android:layout_below="@+id/profile_name"
+        android:layout_marginTop="35dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="@string/dream_subject_hint" />
+
+    <Button
+        android:id="@+id/dream_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dream_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="submitDream"
+        android:text="@string/string_submit_dream" />
+
+    <TextView
+        android:id="@+id/view_dream_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dream_submit"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/title_color"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/view_dream_lobby_string" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/view_dream_lobby"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToDreamDiary"
+        android:src="@drawable/book1" />
+
+</RelativeLayout>

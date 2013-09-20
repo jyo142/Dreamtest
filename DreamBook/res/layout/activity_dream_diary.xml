@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dream_diary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DreamDiary" >
+
+    <TextView
+        android:id="@+id/dream_dairy_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Your Dream Diary" />
+    
+	<ListView 
+	    android:id="@+id/dream_list"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content" />
+
+</RelativeLayout>
